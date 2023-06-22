@@ -10,13 +10,8 @@ public class Bank {
         String name;
         String acc;
 
-        System.out.println("###########################");
-        System.out.println();
-        System.out.println("Bem vindo ao banco Bank!!!");
-        System.out.println();
-        System.out.println("###########################");
-        System.out.println();
-
+        System.out.println("###########################\n\nBem vindo ao banco Bank!!!\n\n###########################\n\n");
+      
         do {
             System.out.println("Por favor digite seu nome:");
             name = read.nextLine();
@@ -27,23 +22,12 @@ public class Bank {
             acc = read.nextLine();
         } while (acc.isEmpty());
 
-        System.out.println("***************************************");
-        System.out.println("Dados iniciais do cliente");
-        System.out.println("Nome: "+ name);
-        System.out.println("Tipo de conta: "+acc);
-        System.out.println("Saldo da conta: " + cifrValue);
-        System.out.println("***************************************");
-        System.out.println();
-        System.out.println();
-
+        System.out.println("\n***************************************\n\nDados iniciais do cliente\n\nNome: "+name+"\n\nTipo de conta: "+acc+"\n\nSaldo da conta: "+cifrValue+"\n\n***************************************\n\n");
+        
         boolean leave = false;
         while (!leave) {
-            System.out.println("Qual opção deseja acessar?\n");
-            System.out.println("1 Consulta de saldo");
-            System.out.println("2 Deposito");
-            System.out.println("3 Saque");
-            System.out.println("4 Sair");
-
+            System.out.println("Qual opção deseja acessar?\n1\n Consulta de saldo\n2 Deposito\n3 Saque\n4 Sair");
+            
             int selection1 = read.nextInt();
             read.nextLine();
 
