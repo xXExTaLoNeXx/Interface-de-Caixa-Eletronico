@@ -40,7 +40,7 @@ public class Bank {
             if (choice == 1) {
                 System.out.println("Saldo disponivel: R$"+accValue);
             } else if (choice == 2) {
-                System.out.println("Bem vindo ao modulo de saque!!\nQuando gostaria de sacar?\nSaldo atual: R$"+accValue);
+                System.out.println("Bem vindo ao modulo de saque!!\nQuanto gostaria de sacar?\nSaldo atual: R$"+accValue);
                 double withdraw = read.nextDouble();
                 if (withdraw <= accValue) {
                     accValue -= withdraw;
